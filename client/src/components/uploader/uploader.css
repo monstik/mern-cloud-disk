@@ -1,0 +1,115 @@
+.uploader {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform: translateY(0);
+  background-color: #21252b;
+  border: #27282b solid 1px;
+  box-shadow: 0 0 10px 3px #5ed2f1;
+  border-radius: 12px 0 0 0;
+  padding: 20px 0 0 20px;
+}
+.uploader__files {
+  height: 450px;
+  width: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 20px;
+}
+.uploader__files::-webkit-scrollbar {
+  width: 10px;
+  background-color: #282c34;
+  border-radius: 10px;
+}
+.uploader__files::-webkit-scrollbar-thumb {
+  background-color: #5ed2f1;
+  border-radius: 9em;
+}
+.uploader__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.uploader__title {
+  color: #5ed2f1;
+  font-size: 1.2rem;
+}
+.uploader__close {
+  align-self: center;
+  background-color: #282c34 !important;
+  padding: 3px;
+}
+.uploader__close:hover {
+  background-color: #5ed2f1 !important;
+}
+.upload-file {
+  background-color: #282c34;
+  border-radius: 8px;
+  margin: 5px 0;
+  padding: 10px 10px;
+}
+.upload-file__header {
+  display: flex;
+  justify-content: space-between;
+}
+.upload-file__progress-bar {
+  height: 1rem;
+  border-radius: 8px;
+  background-color: #21252b;
+  position: relative;
+  display: flex;
+  margin: 5px 0;
+  left: 0;
+}
+.upload-file__upload-bar {
+  background-color: #5ed2f1;
+  border-radius: 8px;
+}
+.upload-file__percent {
+  position: absolute;
+  color: #5ed2f1;
+  left: 45%;
+}
+.openUploader {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 18px;
+}
+.alert-enter {
+  transform: translateY(100%);
+}
+.alert-enter-active {
+  animation: alert-enter 500ms forwards;
+}
+.alert-enter-done {
+  transform: translateY(0);
+  box-shadow: 0 0 100px 10px #5ed2f1;
+}
+.alert-exit {
+  transform: translateY(0);
+}
+.alert-exit-active {
+  animation: alert-exit 500ms forwards;
+}
+@keyframes alert-enter {
+  0% {
+    transform: translateY(100%);
+    box-shadow: 0 0 10px 3px #5ed2f1;
+  }
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 0 100px 10px #5ed2f1;
+  }
+}
+@keyframes alert-exit {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 0 100px 10px #5ed2f1;
+  }
+  100% {
+    transform: translateY(100%);
+    box-shadow: 0 0 10px 3px #5ed2f1;
+  }
+}
+/*# sourceMappingURL=uploader.css.map */

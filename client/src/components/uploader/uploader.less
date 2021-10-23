@@ -1,0 +1,164 @@
+@import "../../utils/color";
+
+.uploader {
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform: translateY(0);
+
+  background-color: @navBarBackground-color;
+
+  border: #27282b solid 1px;
+  box-shadow:0 0 10px 3px @font-color;
+  border-radius: 12px 0 0 0;
+  padding: 20px 0 0 20px;
+
+
+
+  &__files {
+    height: 450px;
+    width: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 20px;
+    &::-webkit-scrollbar {
+      width: 10px;
+
+      background-color: @background-color;
+      border-radius: 10px;
+
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: @font-color;
+      border-radius: 9em;
+
+    }
+  }
+
+
+
+
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+  }
+
+
+  &__title {
+    color: @font-color;
+    font-size: 1.2rem;
+  }
+
+  &__close {
+    align-self: center;
+    background-color: @background-color!important;
+    padding: 3px;
+    &:hover{
+      background-color: @font-color!important;
+    }
+  }
+
+}
+
+.upload-file{
+  background-color: @background-color;
+  border-radius: 8px;
+  margin: 5px 0;
+  padding: 10px 10px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__progress-bar {
+    height: 1rem;
+    border-radius: 8px;
+    background-color: @navBarBackground-color;
+       position: relative;
+   
+    display: flex;
+    margin: 5px 0;
+    left: 0;
+  }
+
+  &__upload-bar{
+
+
+    background-color: @font-color;
+    border-radius: 8px;
+
+  }
+  &__percent{
+    position: absolute;
+
+    color: @font-color;
+
+    left: 45%;
+  }
+}
+
+
+.openUploader {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 18px;
+}
+
+.alert-enter {
+  transform: translateY(100%);
+}
+.alert-enter-active {
+  animation: alert-enter 500ms forwards;
+}
+
+.alert-enter-done{
+  transform: translateY(0);
+  box-shadow:0 0 100px 10px @font-color;
+
+}
+
+.alert-exit {
+  transform: translateY(0);
+
+}
+.alert-exit-active {
+
+  animation: alert-exit 500ms forwards;
+
+}
+
+@keyframes alert-enter {
+  0% {
+
+    transform: translateY(100%);
+    box-shadow:0 0 10px 3px @font-color;
+
+  }
+  100% {
+
+    transform: translateY(0);
+    box-shadow:0 0 100px 10px @font-color;
+  }
+}
+
+@keyframes alert-exit {
+  0% {
+
+    transform: translateY(0);
+    box-shadow:0 0 100px 10px @font-color;
+
+  }
+  100% {
+
+    transform: translateY(100%);
+    box-shadow:0 0 10px 3px @font-color;
+  }
+
+}

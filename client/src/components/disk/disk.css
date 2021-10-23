@@ -1,0 +1,130 @@
+.disk {
+  margin-top: 20px;
+  padding: 0 200px;
+  width: 100%;
+  height: calc(100vh - 100px);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.disk__btns {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 1fr max-content max-content min-content max-content;
+}
+.disk button {
+  background-color: #21252b;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+.disk button:hover {
+  transform: scale(1.03);
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(5);
+  color: #21252b;
+  background-color: #5ed2f1;
+  cursor: pointer;
+}
+.disk__create {
+  margin-left: 10px;
+}
+.disk__upload {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  border: 1px dashed #5ed2f1;
+  text-align: center;
+}
+.disk__upload:hover {
+  transform: scale(1.03);
+  transition-duration: 0.1s;
+  transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
+  border: 1px solid;
+  cursor: pointer;
+}
+.disk__upload__label {
+  width: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.disk__upload__input {
+  display: none;
+}
+.disk__select {
+  display: flex;
+  justify-self: self-end;
+  width: 150px;
+  background-color: #21252b;
+  border: none;
+  text-align: center;
+  border-radius: 12px;
+  padding: 0 20px ;
+  font-size: 15px;
+}
+.disk__select option {
+  background-color: #21252b;
+  color: #5ed2f1;
+  outline: none;
+}
+.disk__select option:hover {
+  color: #21252b;
+  background-color: #5ed2f1;
+}
+.disk__select:hover {
+  color: #21252b;
+  background-color: #5ed2f1;
+}
+.disk__select:active {
+  color: #21252b;
+  background-color: #5ed2f1;
+  border: none;
+  outline: none;
+}
+.disk__select:after {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+}
+.disk__select:focus {
+  outline: none;
+}
+.disk__label {
+  display: flex;
+  align-self: center;
+  justify-self: self-end;
+  margin: 0 20px 0 20px;
+}
+.disk__plate,
+.disk__list {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  background: no-repeat center center;
+  background-size: 30px;
+}
+.disk__plate {
+  grid-column-start: 5;
+  background-image: url("../../assets/img/plate_1.png");
+}
+.disk__plate:hover {
+  background-image: url("../../assets/img/plate_active.png");
+}
+.disk__list {
+  grid-column-start: 6;
+  background-image: url("../../assets/img/list.png");
+}
+.disk__list:hover {
+  background-image: url("../../assets/img/list_active.png");
+}
+.drop-area {
+  width: calc(100% - 40px);
+  height: calc(100vh - 60px - 50px);
+  margin-top: 20px;
+  border: 2px dashed #5ed2f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+/*# sourceMappingURL=disk.css.map */

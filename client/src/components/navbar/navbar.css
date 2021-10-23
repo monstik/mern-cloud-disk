@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  background-color: #21252b;
+  width: 100%;
+  border-bottom: solid 1px #333841;
+}
+.navbar__header {
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.navbar__login {
+  margin-left: auto;
+  margin-right: 20px;
+}
+.navbar__logo {
+  width: 55px;
+}
+.navbar__link {
+  text-decoration: none;
+}
+.navbar__search {
+  width: 200px;
+  margin-left: 100px;
+}
+.navbar__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.container {
+  width: 1140px;
+  display: flex;
+  align-items: center;
+}
+/*# sourceMappingURL=navbar.css.map */

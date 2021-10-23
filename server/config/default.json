@@ -1,0 +1,7 @@
+{
+  "serverPort" : 5000,
+  "dbUrl" : "mongodb+srv://dkraw:MTrztRppplOJN7lE@cloud.va3o0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "secretKey": "monstrik",
+  "filePath" : "C:\\Users\\Monstrik\\Desktop\\lessons_practicka\\mern-cloud-disk\\server\\files",
+  "staticPath" : "C:\\Users\\Monstrik\\Desktop\\lessons_practicka\\mern-cloud-disk\\server\\static"
+}

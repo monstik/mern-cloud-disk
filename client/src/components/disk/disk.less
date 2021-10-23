@@ -1,0 +1,171 @@
+@import '../../utils/color';
+
+.disk {
+  margin-top: 20px;
+  padding: 0 200px;
+  width: 100%;
+  height: calc(100vh - 100px);
+  box-sizing: border-box;
+  overflow: hidden;
+
+  &__btns {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 1fr max-content max-content min-content max-content;
+  }
+
+  button {
+    background-color: @navBarBackground-color;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+
+    &:hover {
+      transform: scale(1.03);
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(5);
+      color: @navBarBackground-color;
+      background-color: @font-color;
+      cursor: pointer;
+    }
+  }
+
+  &__create {
+    margin-left: 10px;
+
+
+  }
+
+
+  &__upload {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    border: 1px dashed @font-color;
+    text-align: center;
+
+    &:hover {
+      transform: scale(1.03);
+      transition-duration: 0.1s;
+      transition-timing-function: cubic-bezier(0.42, 0, 1.0, 1.0);
+      border: 1px solid;
+      cursor: pointer;
+    }
+
+
+    &__label {
+      width: 100%;
+      padding: 10px 0;
+      cursor: pointer;
+
+    }
+
+    &__input {
+      display: none;
+    }
+  }
+
+  &__select {
+    display: flex;
+    justify-self: self-end;
+    width: 150px;
+    background-color: @navBarBackground-color;
+    border: none;
+    text-align: center;
+    border-radius: 12px;
+    padding: 0 20px ;
+    font-size: 15px;
+
+
+
+
+
+    & option{
+      background-color: @navBarBackground-color;
+      color: @font-color;
+      outline: none;
+      &:hover{
+        color: @navBarBackground-color;
+        background-color: @font-color;
+
+      }
+
+    }
+
+    &:hover{
+      color: @navBarBackground-color;
+      background-color: @font-color;
+    }
+    &:active{
+      color: @navBarBackground-color;
+      background-color: @font-color;
+      border: none;
+      outline: none;
+    }
+
+    &:after{
+      -webkit-appearance: none;
+
+      -moz-appearance: none;
+      -ms-appearance: none;
+    }
+
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-self: center;
+    justify-self: self-end;
+    margin: 0 20px 0 20px;
+  }
+
+
+
+  &__plate, &__list {
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    background: no-repeat center center;
+    background-size: 30px;
+
+
+  }
+  &__plate{
+      grid-column-start: 5;
+
+      background-image: url("../../assets/img/plate_1.png");
+      &:hover {
+        background-image: url("../../assets/img/plate_active.png");
+
+      }
+    }
+  &__list {
+    grid-column-start: 6;
+    background-image: url("../../assets/img/list.png");
+    &:hover {
+      background-image: url("../../assets/img/list_active.png");
+
+    }
+  }
+}
+
+
+.drop-area {
+
+  width: calc(100% - 40px);
+  height: calc(100vh - 60px - 50px);
+  margin-top: 20px;
+  border: 2px dashed @font-color;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+
